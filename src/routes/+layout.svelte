@@ -46,19 +46,19 @@
 								'list-nav-item inline-block h-full',
 								'cooperations' === `/${page.url.pathname.split('/').pop()}` ||
 								'project' === `/${page.url.pathname.split('/').pop()}`
-									? 'text-secondary-300 underline'
+									? 'text-secondary-300-700 underline'
 									: ''
 							]}
 						>
 							<Menu>
 								<Menu.Trigger
-									class="list-nav-item inline-block h-full decoration-secondary-300 decoration-6 hover:underline"
+									class="list-nav-item inline-block h-full decoration-secondary-300-700 decoration-6 hover:underline"
 									>{name}</Menu.Trigger
 								>
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 px-1 bg-secondary-300  text-surface-800-200 p-0 py-2 text-lg"
+											class="mt-1 rounded-none border-0 px-1 bg-secondary-300-700  text-surface-800-200 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
@@ -76,7 +76,7 @@
 					{#snippet menuItemTopH1(name, slug)}
 						<li
 							class={[
-								'list-nav-item inline-block h-full decoration-secondary-300 decoration-6 hover:underline',
+								'list-nav-item inline-block h-full decoration-secondary-300-700 decoration-6 hover:underline',
 								slug === `/${page.url.pathname.split('/').pop()}`
 									? 'underline decoration-secondary-300'
 									: ''
@@ -124,7 +124,7 @@
 						<Dialog.Backdrop class="fixed inset-0 z-50 bg-surface-950-50/50" />
 						<Dialog.Positioner class="fixed inset-0 z-50">
 							<Dialog.Content
-								class="relative h-full w-screen overflow-auto bg-secondary-200 p-3 text-surface-900-100"
+								class="relative h-full w-screen overflow-auto bg-secondary-200-800 p-3 text-surface-900-100"
 							>
 								<!-- Top bar with title and close in top-right -->
 								<div class="flex items-center justify-between">
