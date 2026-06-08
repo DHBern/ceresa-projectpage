@@ -35,10 +35,10 @@
 		</AppBar.Lead>
 
 		<!-- Top Navigation Bar -->
-		<AppBar.Headline class="m-0 w-full p-5">
+		<AppBar.Headline class="m-0 w-full px-5">
 			<nav class="">
 				<ul
-					class="my-8 hidden w-full items-start gap-x-12 gap-y-6 text-lg text-surface-50-950 lg:flex lg:flex-wrap lg:justify-between"
+					class="my-8 hidden w-full items-start gap-x-12 gap-y-2 text-lg text-surface-50-950 lg:flex lg:flex-wrap lg:justify-between"
 				>
 					{#snippet menuItemTopDropdown(name, contents)}
 						<li
@@ -58,7 +58,7 @@
 								<Portal>
 									<Menu.Positioner>
 										<Menu.Content
-											class="mt-1 rounded-none border-0 bg-secondary-300  text-surface-800-200 p-0 py-2 text-lg"
+											class="mt-1 rounded-none border-0 px-1 bg-secondary-300  text-surface-800-200 p-0 py-2 text-lg"
 										>
 											{#each contents as content, idx}
 												<a href={content.slug}>
